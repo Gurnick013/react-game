@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8e8df782.chunk.css",
+    "main.js": "/static/js/main.963c8087.chunk.js",
+    "main.js.map": "/static/js/main.963c8087.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.198ca6f3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.198ca6f3.js.map",
+    "static/css/2.1e58ee36.chunk.css": "/static/css/2.1e58ee36.chunk.css",
+    "static/js/2.d255af75.chunk.js": "/static/js/2.d255af75.chunk.js",
+    "static/js/2.d255af75.chunk.js.map": "/static/js/2.d255af75.chunk.js.map",
+    "static/js/3.2d1d6644.chunk.js": "/static/js/3.2d1d6644.chunk.js",
+    "static/js/3.2d1d6644.chunk.js.map": "/static/js/3.2d1d6644.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.1e58ee36.chunk.css.map": "/static/css/2.1e58ee36.chunk.css.map",
+    "static/css/main.8e8df782.chunk.css.map": "/static/css/main.8e8df782.chunk.css.map",
+    "static/js/2.d255af75.chunk.js.LICENSE.txt": "/static/js/2.d255af75.chunk.js.LICENSE.txt",
+    "static/media/bite_sound.904dad75.mp3": "/static/media/bite_sound.904dad75.mp3",
+    "static/media/github.63e66eae.svg": "/static/media/github.63e66eae.svg",
+    "static/media/rs_school_js.ad178c0d.svg": "/static/media/rs_school_js.ad178c0d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.198ca6f3.js",
+    "static/css/2.1e58ee36.chunk.css",
+    "static/js/2.d255af75.chunk.js",
+    "static/css/main.8e8df782.chunk.css",
+    "static/js/main.963c8087.chunk.js"
+  ]
+}
