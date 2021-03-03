@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-// import useSound from 'use-sound';
-// import boopSfx from '../../sounds/boop.mp3';
+import {SoundOutlined, SoundFilled} from '@ant-design/icons';
+import styles from './Music.module.css';
 
-const useAudio = url => {
-    const [audio] = useState(new Audio(url));
+const useAudio = () => {
+    const [audio] = useState(new Audio('https://mp3hap.net/uploads/files/2020-10/1603377900_elena_zheludok_-_shchuchynshchyna_456485968474499226.mp3'));
     const [playing, setPlaying] = useState(false);
-
     const toggle = () => setPlaying(!playing);
+    audio.volume = +localStorage.getItem('volume');
 
     useEffect(() => {
             playing ? audio.play() : audio.pause();
@@ -24,49 +24,14 @@ const useAudio = url => {
     return [playing, toggle];
 };
 
-const Music = ({ url }) => {
-    const [playing, toggle] = useAudio(url);
+const Music = () => {
 
+    const [playing, toggle] = useAudio();
     return (
         <div>
-            <button onClick={toggle}>{playing ? "Pause" : "Play"}</button>
+            <span className={styles.playMuteButton}  onClick={toggle}>{playing ? <SoundOutlined /> : <SoundFilled />}</span>
         </div>
     );
 };
 
 export default Music;
-
-// function Music() {
-//     const [isChecked, setIsChecked] = React.useState(
-//         false
-//     );
-//
-//     const [playActive] = useSound(
-//         '/sounds/pop-down.mp3',
-//         { volume: 0.25 }
-//     );
-//     const [playOn] = useSound(
-//         '/sounds/pop-up-on.mp3',
-//         { volume: 0.25 }
-//     );
-//     const [playOff] = useSound(
-//         '/sounds/pop-up-off.mp3',
-//         { volume: 0.25 }
-//     );
-//
-//     return (
-//         <Checkbox
-//             name="demo-checkbox"
-//             checked={isChecked}
-//             size={24}
-//             label="I agree to self-isolate"
-//             onChange={() => setIsChecked(!isChecked)}
-//             onMouseDown={playActive}
-//             onMouseUp={() => {
-//                 isChecked ? playOff() : playOn();
-//             }}
-//         />
-//     );
-// }
-//
-// export default Music;
