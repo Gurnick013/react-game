@@ -2,6 +2,7 @@ import React from 'react';
 import {Button} from 'antd';
 import styles from './MainMenu.module.css'
 import Footer from "../Footer/Footer";
+import {NavLink} from "react-router-dom";
 
 const MainMenu = () => {
     if (!localStorage.getItem('volume')) localStorage.setItem('volume', '0.5');
@@ -12,19 +13,19 @@ const MainMenu = () => {
                 SNAKE GAME
             </div>
             <div className={styles.menuButtons}>
-                <Button type="primary" href='/play'>New Game</Button>
-                <Button href='/scoreboard'>
+                <NavLink className = {styles.navlik}  to='/play'>New Game</NavLink>
+                <NavLink className = {styles.navlik} to='/scoreboard'>
                     Scoreboard
-                </Button>
-                <Button href='/settings'>
+                </NavLink>
+                <NavLink className = {styles.navlik} to='/settings'>
                     Settings
-                </Button>
-                <Button href='/how_to_play'>
+                </NavLink>
+                <NavLink className = {styles.navlik} to='/how_to_play'>
                     How to play
-                </Button>
-                <Button href='/about'>
+                </NavLink>
+                <NavLink className = {styles.navlik} to='/about'>
                     About
-                </Button>
+                </NavLink>
                 <Footer/>
             </div>
         </div>
